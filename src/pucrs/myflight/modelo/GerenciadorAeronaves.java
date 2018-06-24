@@ -1,8 +1,14 @@
 package pucrs.myflight.modelo;
 
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Scanner;
 
 public class GerenciadorAeronaves {
 
@@ -12,9 +18,9 @@ public class GerenciadorAeronaves {
         this.avioes = new ArrayList<>();
     }
 
-    public void adicionar(Aeronave aviao) {
-        avioes.add(aviao);
-    }
+//    public void adicionar(Aeronave aviao) {
+//        avioes.add(aviao);
+//    }
 
     public ArrayList<Aeronave> listarTodas() {
         return new ArrayList<>(avioes);
@@ -26,6 +32,30 @@ public class GerenciadorAeronaves {
                 return a;
         return null;
     }
+
+    public void carregaDados(String nomeArq) throws IOException {
+        Path path = Paths.get(nomeArq);
+        try (Scanner sc = new Scanner(Files.newBufferedReader(path, Charset.forName("utf8")))) {
+            sc.useDelimiter("[;\n]"); // separadores: ; e nova linha
+            String header = sc.nextLine(); // pula cabeçalho
+            String cod, nome, capacidade;
+            Integer cap;
+            while (sc.hasNext()) {
+                cod = sc.next();
+                nome = sc.next();
+                capacidade = sc.next();
+                cap = Integer.parseInt(capacidade);
+                Aeronave nova = new Aeronave(cod, nome, cap);
+                adicionar(nova);
+                //System.out.format("%s - %s (%s)%n", nome, data, cpf);
+            }
+        }
+    }
+
+    public void adicionar(Aeronave aero) {
+        avioes.add(aero);
+    }
+
 
     public void ordenarDescricao() {
         // Usando Comparable<Aeronave> em Aeronave

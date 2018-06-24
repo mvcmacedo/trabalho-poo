@@ -5,7 +5,7 @@ public class Aeronave implements Imprimivel, Comparable<Aeronave> {
 	private String descricao;
 	private int capacidade;
 	
-	public Aeronave(String codigo, String descricao, int cap) {
+	public Aeronave(String codigo, String descricao, Integer cap) {
 		this.codigo = codigo;
 		this.descricao = descricao;
 		this.capacidade = cap;
