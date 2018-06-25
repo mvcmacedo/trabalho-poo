@@ -94,4 +94,29 @@ public class GerenciadorRotas {
                 result.add(r);
         return result;
     }
+
+    public ArrayList<Aeroporto> getAeroportosPorCia(String cod){
+        ArrayList<Aeroporto> aeros = new ArrayList<>();
+        Aeroporto aux;
+        for(Rota r : rotas) {
+            if (r.getCia().getCodigo().equals(cod)) {
+                aux = r.getOrigem();
+                if (!(aeros.contains(aux))) aeros.add(aux);
+
+                aux = r.getDestino();
+                if (!(aeros.contains(aux))) aeros.add(aux);
+            }
+        }
+        return aeros;
+    }
+
+    public ArrayList<Rota> getRotasPorCia(String cod){
+        ArrayList<Rota> listaRotas = new ArrayList<>();
+        for(Rota r : rotas) {
+            if (r.getCia().getCodigo().equals(cod)) {
+                listaRotas.add(r);
+            }
+        }
+        return listaRotas;
+    }
 }
