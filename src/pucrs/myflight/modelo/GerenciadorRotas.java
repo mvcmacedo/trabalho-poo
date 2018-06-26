@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+import java.util.*;
 
 
 public class GerenciadorRotas {
@@ -93,6 +94,25 @@ public class GerenciadorRotas {
             if(r.getOrigem().getCodigo().equals(codigo))
                 result.add(r);
         return result;
+    }
+
+    public Map<String,Integer> buscarRotasPorAero(ArrayList<String> cods){
+        Map<String,Integer> trafego = new LinkedHashMap<>();
+        for(String cod : cods){
+            int num = this.buscarRotasDeUmAero(cod);
+            trafego.put(cod, num);
+        }
+        return trafego;
+    }
+
+    public int buscarRotasDeUmAero(String cod){
+        int cont = 0;
+        for(Rota r : rotas) {
+            if (r.getDestino().getCodigo() == cod || r.getDestino().getCodigo() == cod) {
+                cont++;
+            }
+        }
+        return cont;
     }
 
     public ArrayList<Aeroporto> getAeroportosPorCia(String cod){

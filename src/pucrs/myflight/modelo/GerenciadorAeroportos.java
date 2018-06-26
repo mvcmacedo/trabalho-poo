@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+
 import pucrs.myflight.modelo.GerenciadorPaises;
 
 public class GerenciadorAeroportos {
@@ -56,15 +57,29 @@ public class GerenciadorAeroportos {
                 aeroporto);
     }
 
+    public ArrayList<String> getCods() {
+        ArrayList<String> codigos = new ArrayList<>();
+        for (Aeroporto a : aeroportos) {
+            codigos.add(a.getCodigo());
+        }
+        return codigos;
+    }
 
+    public ArrayList<String> getCodsPorPais(String cod) {
+        ArrayList<String> codigos = new ArrayList<>();
+        for (Aeroporto a : aeroportos) {
+            if (a.getPais().equalsIgnoreCase(cod)) codigos.add(a.getCodigo());
+        }
+        return codigos;
+    }
 
     public ArrayList<Aeroporto> listarTodos() {
         return new ArrayList<>(aeroportos);
     }
 
     public Aeroporto buscarCodigo(String codigo) {
-        for(Aeroporto a: aeroportos)
-            if(a.getCodigo().equals(codigo))
+        for (Aeroporto a : aeroportos)
+            if (a.getCodigo().equals(codigo))
                 return a;
         return null;
     }
