@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d2db2d8-51bf-4a7c-89ff-ce36d16e795a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,16 +18,40 @@
       <file leaf-file-name="JanelaFX.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="367" selection-start-line="367" selection-end-line="367" />
+            <state relative-caret-position="194">
+              <caret line="399" column="131" selection-start-line="399" selection-start-column="131" selection-end-line="399" selection-end-column="131" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5347#5648#0" expanded="true" />
                 <element signature="e#5647#5648#0" expanded="true" />
-                <element signature="e#13997#13998#0" expanded="true" />
-                <element signature="e#14074#14075#0" expanded="true" />
-                <element signature="e#14043#14044#0" expanded="true" />
-                <element signature="e#14071#14072#0" expanded="true" />
+                <element signature="e#14980#14981#0" expanded="true" />
+                <element signature="e#15057#15058#0" expanded="true" />
+                <element signature="e#15315#15316#0" expanded="true" />
+                <element signature="e#15343#15344#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GerenciadorAeroportos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GerenciadorRotas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="161" column="128" selection-start-line="161" selection-start-column="128" selection-end-line="161" selection-end-column="128" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,7 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>74N</find>
       <find>777</find>
       <find>KL;AMS</find>
       <find>QR;MEL</find>
@@ -76,6 +97,7 @@
       <find>false</find>
       <find>System.out</find>
       <find>label</find>
+      <find>.clear()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,10 +113,10 @@
         <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeronaves.java" />
         <option value="$PROJECT_DIR$/routes.dat" />
         <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/App.java" />
-        <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java" />
         <option value="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" />
-        <option value="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" />
         <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java" />
+        <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java" />
+        <option value="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" />
       </list>
     </option>
   </component>
@@ -278,12 +300,12 @@
       <workItem from="1530038177029" duration="9072000" />
       <workItem from="1530053629040" duration="1809000" />
       <workItem from="1530057783454" duration="279000" />
-      <workItem from="1530061539090" duration="14122000" />
+      <workItem from="1530061539090" duration="16058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71251000" />
+    <option name="totallyTimeSpent" value="73187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -299,7 +321,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44919786" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44919786" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -346,10 +368,10 @@
             <element signature="imports" expanded="true" />
             <element signature="e#5347#5648#0" expanded="true" />
             <element signature="e#5647#5648#0" expanded="true" />
-            <element signature="e#13997#13998#0" expanded="true" />
-            <element signature="e#14074#14075#0" expanded="true" />
-            <element signature="e#14043#14044#0" expanded="true" />
-            <element signature="e#14071#14072#0" expanded="true" />
+            <element signature="e#14980#14981#0" expanded="true" />
+            <element signature="e#15057#15058#0" expanded="true" />
+            <element signature="e#15315#15316#0" expanded="true" />
+            <element signature="e#15343#15344#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -413,10 +435,10 @@
             <element signature="imports" expanded="true" />
             <element signature="e#5347#5648#0" expanded="true" />
             <element signature="e#5647#5648#0" expanded="true" />
-            <element signature="e#13997#13998#0" expanded="true" />
-            <element signature="e#14074#14075#0" expanded="true" />
-            <element signature="e#14043#14044#0" expanded="true" />
-            <element signature="e#14071#14072#0" expanded="true" />
+            <element signature="e#14980#14981#0" expanded="true" />
+            <element signature="e#15057#15058#0" expanded="true" />
+            <element signature="e#15315#15316#0" expanded="true" />
+            <element signature="e#15343#15344#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -583,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/countries.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2398">
-          <caret line="172" column="2" selection-start-line="172" selection-end-line="172" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/VooEscalas.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -625,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="68" column="54" lean-forward="true" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorCias.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -648,13 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Aeroporto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -676,13 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827850">
-          <caret line="55190" column="11" selection-start-line="55190" selection-start-column="7" selection-end-line="55190" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -728,10 +722,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/countries.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="172" column="2" selection-start-line="172" selection-end-line="172" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="227">
           <caret line="161" column="128" selection-start-line="161" selection-start-column="128" selection-end-line="161" selection-end-column="128" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Aeroporto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -740,16 +765,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="367" selection-start-line="367" selection-end-line="367" />
+        <state relative-caret-position="194">
+          <caret line="399" column="131" selection-start-line="399" selection-start-column="131" selection-end-line="399" selection-end-column="131" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5347#5648#0" expanded="true" />
             <element signature="e#5647#5648#0" expanded="true" />
-            <element signature="e#13997#13998#0" expanded="true" />
-            <element signature="e#14074#14075#0" expanded="true" />
-            <element signature="e#14043#14044#0" expanded="true" />
-            <element signature="e#14071#14072#0" expanded="true" />
+            <element signature="e#14980#14981#0" expanded="true" />
+            <element signature="e#15057#15058#0" expanded="true" />
+            <element signature="e#15315#15316#0" expanded="true" />
+            <element signature="e#15343#15344#0" expanded="true" />
           </folding>
         </state>
       </provider>

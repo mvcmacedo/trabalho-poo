@@ -73,6 +73,13 @@ public class GerenciadorAeroportos {
         return codigos;
     }
 
+    public int tempoEntreAeroportos(Aeroporto origem, Aeroporto destino){
+        double distancia = Geo.distancia(origem.getLocal(), destino.getLocal());
+        double tempo = Math.ceil(distancia/890); // 890 = media de vel aviao comercial
+        int tempoInt = (int) tempo;
+        return tempoInt;
+    }
+
     public ArrayList<Aeroporto> listarTodos() {
         return new ArrayList<>(aeroportos);
     }

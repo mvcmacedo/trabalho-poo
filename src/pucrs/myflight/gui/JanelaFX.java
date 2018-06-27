@@ -194,7 +194,21 @@ public class JanelaFX extends Application {
         });
 
         btnConsulta4.setOnAction(e -> {
-            consulta4();
+            form.add(voltar, 0, 0);
+            form.add(new Label("Aeroporto Origem:"), 0, 1);
+            TextField aero = new TextField();
+            form.add(aero, 1,1);
+            form.add(new Label("Tempo de Vôo:"), 2, 1);
+            TextField tempo = new TextField();
+            form.add(tempo, 3,1);
+            Button btnBuscaAeroportos = new Button("Buscar");
+            form.add(btnBuscaAeroportos, 4, 1);
+            pane.setTop(form);
+            btnBuscaAeroportos.setOnAction(c -> {
+                String aeroCod = String.valueOf(aero.getText());
+                String tempoDeVoo = String.valueOf(tempo.getText());
+                consulta4(aeroCod, tempoDeVoo);
+            });
         });
 
         voltar.setOnAction(e -> {
@@ -370,8 +384,23 @@ public class JanelaFX extends Application {
 
     }
 
-    private void consulta4() {
-
+    private void consulta4(String cod, String tempo) {
+//        gerenciador.clear();
+        List<MyWaypoint> lstPoints = new ArrayList<>();
+        ArrayList<Aeroporto> aeros = new ArrayList<>();
+        Aeroporto aeroOrigem = gerAero.buscarCodigo(cod);
+        int tempoDigitado =  Integer.parseInt(tempo);
+        for(Aeroporto a : aeroportos){
+            if(gerAero.tempoEntreAeroportos(aeroOrigem, a) <= tempoDigitado){
+                aeros.add(a);
+            }
+        }
+        lstPoints.add(new MyWaypoint(Color.RED, aeroOrigem.getCodigo(), aeroOrigem.getLocal(), 30));
+        for(Aeroporto a : aeros){
+            if(!(a.getCodigo().equalsIgnoreCase(cod))) lstPoints.add(new MyWaypoint(Color.GREEN, a.getCodigo(), a.getLocal(), 10));
+        }
+        gerenciador.setPontos(lstPoints);
+        gerenciador.getMapKit().repaint();
     }
 
     private class EventosMouse extends MouseAdapter {
