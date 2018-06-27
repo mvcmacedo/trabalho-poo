@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3d2db2d8-51bf-4a7c-89ff-ce36d16e795a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,16 +18,12 @@
       <file leaf-file-name="JanelaFX.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
-              <caret line="403" column="78" selection-start-line="403" selection-start-column="78" selection-end-line="403" selection-end-column="78" />
+            <state relative-caret-position="238">
+              <caret line="178" column="41" selection-start-line="178" selection-start-column="41" selection-end-line="178" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5347#5648#0" expanded="true" />
-                <element signature="e#5647#5648#0" expanded="true" />
-                <element signature="e#14980#14981#0" expanded="true" />
-                <element signature="e#15057#15058#0" expanded="true" />
-                <element signature="e#15315#15316#0" expanded="true" />
-                <element signature="e#15343#15344#0" expanded="true" />
+                <element signature="e#5545#5860#0" expanded="true" />
+                <element signature="e#5859#5860#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +40,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>777</find>
-      <find>KL;AMS</find>
       <find>QR;MEL</find>
       <find>77</find>
       <find>TK;FRU</find>
@@ -75,6 +68,8 @@
       <find>System.out</find>
       <find>.clear()</find>
       <find>label</find>
+      <find>setLabe</find>
+      <find>SETLABEL</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,7 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,6 +152,7 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,16 +272,16 @@
       <workItem from="1530038177029" duration="9072000" />
       <workItem from="1530053629040" duration="1809000" />
       <workItem from="1530057783454" duration="279000" />
-      <workItem from="1530061539090" duration="17833000" />
+      <workItem from="1530061539090" duration="17974000" />
+      <workItem from="1530122457319" duration="901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74962000" />
+    <option name="totallyTimeSpent" value="76004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -336,12 +331,8 @@
           <caret line="78" column="35" lean-forward="true" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5347#5648#0" expanded="true" />
-            <element signature="e#5647#5648#0" expanded="true" />
-            <element signature="e#14980#14981#0" expanded="true" />
-            <element signature="e#15057#15058#0" expanded="true" />
-            <element signature="e#15315#15316#0" expanded="true" />
-            <element signature="e#15343#15344#0" expanded="true" />
+            <element signature="e#5545#5860#0" expanded="true" />
+            <element signature="e#5859#5860#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -352,8 +343,6 @@
           <caret line="304" column="23" selection-start-line="304" selection-start-column="23" selection-end-line="304" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <element signature="e#9130#9131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -403,12 +392,8 @@
           <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5347#5648#0" expanded="true" />
-            <element signature="e#5647#5648#0" expanded="true" />
-            <element signature="e#14980#14981#0" expanded="true" />
-            <element signature="e#15057#15058#0" expanded="true" />
-            <element signature="e#15315#15316#0" expanded="true" />
-            <element signature="e#15343#15344#0" expanded="true" />
+            <element signature="e#5545#5860#0" expanded="true" />
+            <element signature="e#5859#5860#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -446,8 +431,6 @@
           <caret line="145" column="29" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <element signature="e#9130#9131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -740,16 +723,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="403" column="78" selection-start-line="403" selection-start-column="78" selection-end-line="403" selection-end-column="78" />
+        <state relative-caret-position="238">
+          <caret line="178" column="41" selection-start-line="178" selection-start-column="41" selection-end-line="178" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5347#5648#0" expanded="true" />
-            <element signature="e#5647#5648#0" expanded="true" />
-            <element signature="e#14980#14981#0" expanded="true" />
-            <element signature="e#15057#15058#0" expanded="true" />
-            <element signature="e#15315#15316#0" expanded="true" />
-            <element signature="e#15343#15344#0" expanded="true" />
+            <element signature="e#5545#5860#0" expanded="true" />
+            <element signature="e#5859#5860#0" expanded="true" />
           </folding>
         </state>
       </provider>

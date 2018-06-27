@@ -171,12 +171,14 @@ public class JanelaFX extends Application {
                                 if(route.equals(cell.getItem())){
                                     Geo origemAero = route.getOrigem().getLocal();
                                     Geo destinoAero = route.getDestino().getLocal();
-                                    double distancia = Geo.distancia(origemAero, destinoAero);
+                                    double distancia = (int) Geo.distancia(origemAero, destinoAero);
                                     double tempo = Math.ceil(distancia/890); // media de velocidade de um avião comercial
                                     int tempoVoo = (int) tempo;
                                     Tracado tracado = new Tracado();
+                                    tracado.setLabel("Distância: " + distancia + "km, " + "Aeronave: " + route.getAeronave().getCodigo());
                                     tracado.setWidth(5);
                                     tracado.setCor(Color.GREEN);
+
                                     tracado.addPonto(route.getOrigem().getLocal());
                                     tracado.addPonto(route.getDestino().getLocal());
                                     gerenciador.addTracado(tracado);
