@@ -290,9 +290,12 @@ public class JanelaFX extends Application {
 
         gerenciador.clear();
         for (Rota r : rotas) {
+            int distancia = (int) Geo.distancia(r.getOrigem().getLocal(), r.getDestino().getLocal());
+            String dist = String.valueOf(distancia);
             Tracado tr = new Tracado();
             tr.setWidth(5);
             tr.setCor(Color.BLUE);
+//            tr.setLabel("Distância: " + dist + "km, " + "Aeronave: " + r.getAeronave().getCodigo());
             tr.addPonto(r.getOrigem().getLocal());
             tr.addPonto(r.getDestino().getLocal());
             gerenciador.addTracado(tr);
@@ -364,9 +367,12 @@ public class JanelaFX extends Application {
 
         gerenciador.clear();
         for (Rota r : rotasConsulta) {
+            int distancia = (int) Geo.distancia(r.getOrigem().getLocal(), r.getDestino().getLocal());
+            String dist = String.valueOf(distancia);
             Tracado tr = new Tracado();
             tr.setWidth(5);
             tr.setCor(Color.BLUE);
+//            tr.setLabel("Distância: " + dist + "km, " + "Aeronave: " + r.getAeronave().getCodigo());
             tr.addPonto(r.getOrigem().getLocal());
             if(!(r.getOrigem().getCodigo().equalsIgnoreCase(origem))) lstPoints.add(new MyWaypoint(Color.gray, r.getOrigem().getCodigo(), r.getOrigem().getLocal(), 5));
             tr.addPonto(r.getDestino().getLocal());

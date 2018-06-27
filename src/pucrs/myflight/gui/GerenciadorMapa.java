@@ -174,12 +174,18 @@ public class GerenciadorMapa {
 						Point2D point = map.convertGeoPositionToPoint(pontos.get(i));
 						x[i] = (int) point.getX();
 						y[i] = (int) point.getY();
+
 					}
 					// int xPoints[] = { 0, 20, 40, 100, 120 };
 					// int yPoints[] = { 0, 20, 40, 100, 120 };
+					g.setFont(font);
 					g.setColor(cor);
 					g.setStroke(new BasicStroke(tr.getWidth()));
 					g.drawPolyline(x, y, x.length);
+					g.setColor(Color.BLACK);
+					g.setColor(Color.BLACK);
+					g.drawString(tr.getLabel(), xmid +15, ymid);
+//					g.drawString(tr.getLabel(), x + offset, y + offset);
 				}
 			}
 
