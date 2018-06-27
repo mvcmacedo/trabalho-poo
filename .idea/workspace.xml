@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3d2db2d8-51bf-4a7c-89ff-ce36d16e795a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,66 +17,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JanelaFX.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JanelaFX.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-891">
-              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="e#8439#8440#0" expanded="true" />
-                <element signature="e#8516#8517#0" expanded="true" />
-                <element signature="e#9300#9301#0" expanded="true" />
-                <element signature="e#9328#9329#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GerenciadorRotas.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="280">
+              <caret line="367" selection-start-line="367" selection-end-line="367" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyWaypoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/MyWaypoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GerenciadorAeroportos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-              <folding>
-                <element signature="e#2117#2118#0" expanded="true" />
-                <element signature="e#2167#2168#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GerenciadorCias.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorCias.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-456">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="19" />
-              <folding>
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#5347#5648#0" expanded="true" />
+                <element signature="e#5647#5648#0" expanded="true" />
+                <element signature="e#13997#13998#0" expanded="true" />
+                <element signature="e#14074#14075#0" expanded="true" />
+                <element signature="e#14043#14044#0" expanded="true" />
+                <element signature="e#14071#14072#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,16 +46,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>applica</find>
-      <find>consulta1</find>
-      <find>M87</find>
-      <find>latam</find>
-      <find>Geo</find>
-      <find>PF</find>
-      <find>2I</find>
-      <find>BA</find>
-      <find>BA;FRA</find>
-      <find>74</find>
       <find>74N</find>
       <find>777</find>
       <find>KL;AMS</find>
@@ -123,6 +66,16 @@
       <find>clear</find>
       <find>pontosPainter</find>
       <find>ANC</find>
+      <find>POA;MVD</find>
+      <find>MVD;GRU</find>
+      <find>BR</find>
+      <find>BR;</find>
+      <find>;BR</find>
+      <find>;NE</find>
+      <find>POA;</find>
+      <find>false</find>
+      <find>System.out</find>
+      <find>label</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,10 +91,10 @@
         <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeronaves.java" />
         <option value="$PROJECT_DIR$/routes.dat" />
         <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/App.java" />
-        <option value="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" />
-        <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java" />
         <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java" />
+        <option value="$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java" />
         <option value="$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java" />
+        <option value="$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java" />
       </list>
     </option>
   </component>
@@ -163,6 +116,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,9 +157,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,12 +274,16 @@
       <workItem from="1529773853726" duration="22991000" />
       <workItem from="1529855600205" duration="11562000" />
       <workItem from="1529900461369" duration="104000" />
-      <workItem from="1529979280549" duration="5720000" />
+      <workItem from="1529979280549" duration="5949000" />
+      <workItem from="1530038177029" duration="9072000" />
+      <workItem from="1530053629040" duration="1809000" />
+      <workItem from="1530057783454" duration="279000" />
+      <workItem from="1530061539090" duration="14122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45740000" />
+    <option name="totallyTimeSpent" value="71251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -342,7 +299,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5360963" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44919786" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -353,7 +310,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973262" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5187166" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -370,31 +327,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="55" />
+      <option name="time" value="110" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorCias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Rota.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -407,10 +343,13 @@
         <state relative-caret-position="1170">
           <caret line="78" column="35" lean-forward="true" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
           <folding>
-            <element signature="e#8439#8440#0" expanded="true" />
-            <element signature="e#8516#8517#0" expanded="true" />
-            <element signature="e#9300#9301#0" expanded="true" />
-            <element signature="e#9328#9329#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5347#5648#0" expanded="true" />
+            <element signature="e#5647#5648#0" expanded="true" />
+            <element signature="e#13997#13998#0" expanded="true" />
+            <element signature="e#14074#14075#0" expanded="true" />
+            <element signature="e#14043#14044#0" expanded="true" />
+            <element signature="e#14071#14072#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -452,6 +391,7 @@
         <state relative-caret-position="105">
           <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#489#490#0" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />
           </folding>
@@ -470,10 +410,13 @@
         <state relative-caret-position="2295">
           <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
           <folding>
-            <element signature="e#8439#8440#0" expanded="true" />
-            <element signature="e#8516#8517#0" expanded="true" />
-            <element signature="e#9300#9301#0" expanded="true" />
-            <element signature="e#9328#9329#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5347#5648#0" expanded="true" />
+            <element signature="e#5647#5648#0" expanded="true" />
+            <element signature="e#13997#13998#0" expanded="true" />
+            <element signature="e#14074#14075#0" expanded="true" />
+            <element signature="e#14043#14044#0" expanded="true" />
+            <element signature="e#14071#14072#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -574,20 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/VooEscalas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Geo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -599,13 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Pais.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -623,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/airports.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="360" column="3" selection-start-line="360" selection-end-line="360" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/equipment.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -644,16 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/Tracado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
@@ -661,20 +566,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Aeronave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/CiaAerea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -692,47 +583,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/countries.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2398">
+          <caret line="172" column="2" selection-start-line="172" selection-end-line="172" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/VooEscalas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Pais.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Voo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
+        <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Aeronave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Rota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java">
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="304" column="23" selection-start-line="304" selection-start-column="23" selection-end-line="304" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9109#9110#0" expanded="true" />
-            <element signature="e#9130#9131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="39571" column="10" selection-start-line="39571" selection-start-column="7" selection-end-line="39571" selection-end-column="10" />
+        <state relative-caret-position="885">
+          <caret line="68" column="54" lean-forward="true" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorCias.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="315">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#489#490#0" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/CiaAerea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -743,28 +658,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/countries.dat">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/tk/quantum/GlassViewEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2398">
-          <caret line="172" column="2" selection-start-line="172" selection-end-line="172" selection-end-column="2" />
+        <state relative-caret-position="128">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorAeroportos.java">
+    <entry file="file://$PROJECT_DIR$/airports.dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-          <folding>
-            <element signature="e#2117#2118#0" expanded="true" />
-            <element signature="e#2167#2168#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="118">
+          <caret line="3581" column="4" selection-start-line="3581" selection-end-line="3581" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/Geo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827850">
+          <caret line="55190" column="11" selection-start-line="55190" selection-start-column="7" selection-end-line="55190" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jxmapviewer.jar!/org/jxmapviewer/viewer/GeoPosition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/MyWaypoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
+        <state relative-caret-position="305">
           <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/Tracado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/GerenciadorMapa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="275" column="39" selection-start-line="275" selection-start-column="39" selection-end-line="275" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9109#9110#0" expanded="true" />
+            <element signature="e#9130#9131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="161" column="128" selection-start-line="161" selection-start-column="128" selection-end-line="161" selection-end-column="128" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -773,23 +740,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/gui/JanelaFX.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#8439#8440#0" expanded="true" />
-            <element signature="e#8516#8517#0" expanded="true" />
-            <element signature="e#9300#9301#0" expanded="true" />
-            <element signature="e#9328#9329#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pucrs/myflight/modelo/GerenciadorRotas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="280">
+          <caret line="367" selection-start-line="367" selection-end-line="367" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5347#5648#0" expanded="true" />
+            <element signature="e#5647#5648#0" expanded="true" />
+            <element signature="e#13997#13998#0" expanded="true" />
+            <element signature="e#14074#14075#0" expanded="true" />
+            <element signature="e#14043#14044#0" expanded="true" />
+            <element signature="e#14071#14072#0" expanded="true" />
           </folding>
         </state>
       </provider>

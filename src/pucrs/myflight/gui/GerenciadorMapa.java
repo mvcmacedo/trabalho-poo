@@ -168,7 +168,7 @@ public class GerenciadorMapa {
 //				    g.rotate(theta);
 //				    g.drawString(tr.getLabel(), xmid, ymid);
 //				    g.rotate(-theta);
-//				    g.translate(-xmid,-ymid);									
+//				    g.translate(-xmid,-ymid);
 					
 					for (int i = 0; i < pontos.size(); i++) {
 						Point2D point = map.convertGeoPositionToPoint(pontos.get(i));

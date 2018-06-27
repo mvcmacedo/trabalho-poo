@@ -139,4 +139,55 @@ public class GerenciadorRotas {
         }
         return listaRotas;
     }
+
+    public boolean verificaDestino(String origem, String destino){
+        boolean exists = false;
+        for(Rota rota : rotas){
+            if(rota.getOrigem().getCodigo().equalsIgnoreCase(origem) && rota.getDestino().getCodigo().equalsIgnoreCase(destino)) exists = true;
+        }
+        return exists;
+    }
+
+    public ArrayList<Rota> buscarRotasOrigemDestino(String origem, String destino){
+        ArrayList<Rota> result = new ArrayList<>();
+        Map<String, Aeroporto> destinos = new LinkedHashMap<>();
+        Map<String, String> aux = new LinkedHashMap<>();
+
+        for(Rota r : rotas) {
+            if(r.getOrigem().getCodigo().equalsIgnoreCase(origem)){
+                if(r.getDestino().getCodigo().equalsIgnoreCase(destino)){
+                    result.add(r);
+                    continue;
+                }
+                if(verificaDestino(r.getDestino().getCodigo(), destino) && !(destinos.containsKey(r.getDestino().getCodigo()))){
+                    result.add(r);
+                    destinos.put(r.getDestino().getCodigo(), r.getDestino());
+                }
+            }
+//            if (r.getOrigem().getCodigo().equalsIgnoreCase(origem)) {
+//                if (r.getDestino().getCodigo().equalsIgnoreCase(destino)) {
+//                    if(!(result.contains(r.getDestino().getCodigo()))) result.add(r);
+//                } else {
+//                    if(verificaDestino(r.getDestino().getCodigo(), destino)){
+//                        if(!(result.contains(r.getDestino().getCodigo()))){
+//                            destinos.put(r.getDestino().getCodigo(), r.getDestino());
+//                            result.add(r);
+//                        }
+//                    }
+//                }
+//            }
+        }
+
+        for (Map.Entry<String, Aeroporto> entry : destinos.entrySet()) {
+            for(Rota rota : rotas){
+                if(rota.getOrigem().getCodigo().equalsIgnoreCase(entry.getKey()) && rota.getDestino().getCodigo().equalsIgnoreCase(destino) && !(aux.containsKey(rota.getOrigem().getCodigo()))){
+                    result.add(rota);
+                    aux.put(rota.getOrigem().getCodigo(), rota.getOrigem().getCodigo());
+                }
+            }
+        }
+
+
+        return result;
+    }
 }

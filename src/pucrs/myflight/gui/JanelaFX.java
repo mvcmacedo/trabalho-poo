@@ -4,16 +4,19 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 import java.util.Map.Entry;
 
 import javax.swing.SwingUtilities;
+import javax.swing.event.ChangeListener;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.value.ObservableValue;
+import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import org.jxmapviewer.JXMapViewer;
 import org.jxmapviewer.viewer.GeoPosition;
 
@@ -24,13 +27,9 @@ import javafx.embed.swing.SwingNode;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import pucrs.myflight.modelo.*;
 
 public class JanelaFX extends Application {
@@ -74,6 +73,12 @@ public class JanelaFX extends Application {
         BorderPane pane = new BorderPane();
         GridPane leftPane = new GridPane();
         GridPane form = new GridPane();
+        GridPane horas = new GridPane();
+
+        horas.setAlignment(Pos.BASELINE_RIGHT);
+        horas.setHgap(2);
+        horas.setVgap(-40);
+        horas.setPadding(new Insets(10, 10, 10, 10));
 
         leftPane.setAlignment(Pos.CENTER);
         leftPane.setHgap(10);
@@ -128,7 +133,64 @@ public class JanelaFX extends Application {
         });
 
         btnConsulta3.setOnAction(e -> {
-            consulta3();
+            form.getChildren().clear(); // limpa o form
+            form.add(voltar, 0, 0);
+            form.add(new Label("Aeroporto Origem:"), 0, 1);
+            TextField origem = new TextField();
+            form.add(origem, 1, 1);
+            form.add(new Label("Aeroporto Destino:"), 2, 1);
+            TextField destino = new TextField();
+            form.add(destino, 3, 1);
+            Button btnBuscarRotas = new Button("Buscar");
+            form.add(btnBuscarRotas, 4, 1);
+            pane.setTop(form);
+            btnBuscarRotas.setOnAction(c -> {
+                String origemCod = String.valueOf(origem.getText());
+                String destinoCod = String.valueOf(destino.getText());
+                ArrayList<Rota> rotasConsulta = consulta3(origemCod, destinoCod);
+                form.add(new Label("Selecione uma rota: "), 6, 1);
+                ComboBox routes = new ComboBox();
+                form.add(routes, 7,1);
+                ObservableList listaRotas = FXCollections.observableArrayList(
+                        rotasConsulta);
+                routes.setItems(listaRotas);
+
+                routes.setCellFactory(lv -> {
+                    ListCell<Rota> cell = new ListCell<Rota>() {
+                        @Override
+                        protected void updateItem(Rota item, boolean empty) {
+                            super.updateItem(item, empty);
+                            setText(empty ? null : String.valueOf(item));
+                        }
+                    };
+                    cell.setOnMousePressed(r -> {
+                        horas.getChildren().clear();
+                        if (! cell.isEmpty()) {
+                            gerenciador.clear();
+                            for(Rota route : rotas){
+                                if(route.equals(cell.getItem())){
+                                    Geo origemAero = route.getOrigem().getLocal();
+                                    Geo destinoAero = route.getDestino().getLocal();
+                                    double distancia = Geo.distancia(origemAero, destinoAero);
+                                    double tempo = Math.ceil(distancia/890); // media de velocidade de um avião comercial
+                                    int tempoVoo = (int) tempo;
+                                    Tracado tracado = new Tracado();
+                                    tracado.setWidth(5);
+                                    tracado.setCor(Color.GREEN);
+                                    tracado.addPonto(route.getOrigem().getLocal());
+                                    tracado.addPonto(route.getDestino().getLocal());
+                                    gerenciador.addTracado(tracado);
+                                    horas.add(new Label(tempoVoo + " Horas") , 8,1);
+                                    pane.setRight(horas);
+                                }
+                            }
+                        }
+                    });
+                    return cell ;
+                });
+
+
+            });
         });
 
         btnConsulta4.setOnAction(e -> {
@@ -214,12 +276,12 @@ public class JanelaFX extends Application {
 
         gerenciador.clear();
         for (Rota r : rotas) {
-            Tracado tr2 = new Tracado();
-            tr2.setWidth(5);
-            tr2.setCor(Color.BLUE);
-            tr2.addPonto(r.getOrigem().getLocal());
-            tr2.addPonto(r.getDestino().getLocal());
-            gerenciador.addTracado(tr2);
+            Tracado tr = new Tracado();
+            tr.setWidth(5);
+            tr.setCor(Color.BLUE);
+            tr.addPonto(r.getOrigem().getLocal());
+            tr.addPonto(r.getDestino().getLocal());
+            gerenciador.addTracado(tr);
 
 
         }
@@ -246,10 +308,10 @@ public class JanelaFX extends Application {
         List<MyWaypoint> lstPoints = new ArrayList<>();
         ArrayList<String> aeros;
 
-        if (cod.isEmpty()) {
-            aeros = gerAero.getCods();
-        } else {
-            aeros = gerAero.getCodsPorPais(cod);
+        if (cod.isEmpty()) { // usuário não digitou nada
+            aeros = gerAero.getCods(); // pega todos aeroportos
+        } else { // usuário digitou um país
+            aeros = gerAero.getCodsPorPais(cod); // pega aeroportos do país digitado
         }
         Map<String, Integer> trafego = gerRotas.buscarRotasPorAero(aeros);
         for (Map.Entry<String, Integer> entry : trafego.entrySet()) {
@@ -271,7 +333,6 @@ public class JanelaFX extends Application {
                 color = Color.red;
             }
             lstPoints.add(new MyWaypoint(color, a.getCodigo(), a.getLocal(), size));
-
         }
 
         gerenciador.setPontos(lstPoints);
@@ -280,7 +341,32 @@ public class JanelaFX extends Application {
 
     }
 
-    private void consulta3() {
+    private ArrayList<Rota> consulta3(String origem, String destino) {
+//        System.out.println(origem + " " + destino);
+        List<MyWaypoint> lstPoints = new ArrayList<>();
+        ArrayList<Rota> rotasConsulta = gerRotas.buscarRotasOrigemDestino(origem, destino);
+        Aeroporto aeroOrigem = gerAero.buscarCodigo(origem);
+        Aeroporto aeroDestino = gerAero.buscarCodigo(destino);
+
+        gerenciador.clear();
+        for (Rota r : rotasConsulta) {
+            Tracado tr = new Tracado();
+            tr.setWidth(5);
+            tr.setCor(Color.BLUE);
+            tr.addPonto(r.getOrigem().getLocal());
+            if(!(r.getOrigem().getCodigo().equalsIgnoreCase(origem))) lstPoints.add(new MyWaypoint(Color.gray, r.getOrigem().getCodigo(), r.getOrigem().getLocal(), 5));
+            tr.addPonto(r.getDestino().getLocal());
+            if(!(r.getDestino().getCodigo().equalsIgnoreCase(destino))) lstPoints.add(new MyWaypoint(Color.gray, r.getDestino().getCodigo(), r.getDestino().getLocal(), 5));
+            gerenciador.addTracado(tr);
+        }
+
+        lstPoints.add(new MyWaypoint(Color.RED, aeroOrigem.getCodigo(), aeroOrigem.getLocal(), 10));
+        lstPoints.add(new MyWaypoint(Color.GREEN, aeroDestino.getCodigo(), aeroDestino.getLocal(), 10));
+
+        gerenciador.setPontos(lstPoints);
+        gerenciador.getMapKit().repaint();
+
+        return rotasConsulta;
 
     }
 
